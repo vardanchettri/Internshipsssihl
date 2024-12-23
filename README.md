@@ -5,7 +5,8 @@
    leafpad vardan.c
 ```
 ***
-```           #include <stdio.h>
+```
+    #include <stdio.h>
     int main() {
         int i, sum = 0, n = 200;
         for (i = 1; i <= n; ++i) {
@@ -15,15 +16,18 @@
         return 0;
     } 
 ```
+
+
+![1](https://github.com/user-attachments/assets/b077362b-0db9-42f4-b224-9dce3e53376c)
+
+
 **after that the code was compiled using**   
 
 
 ```gcc vardan.c```
 
-![1](https://github.com/user-attachments/assets/b077362b-0db9-42f4-b224-9dce3e53376c)
-***
-![2](https://github.com/user-attachments/assets/7e0476d7-f36b-4947-85c9-0da78ad33fb3)
-***
+
+**the programme ./a.out was then used to execute the programme to add integer from 1 to 200**
 
 ![2](https://github.com/user-attachments/assets/3d523f2b-1949-4c05-91f7-99b11ab4fe2d)
 ***
