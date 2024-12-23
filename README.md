@@ -33,6 +33,9 @@
 ![2](https://github.com/user-attachments/assets/3d523f2b-1949-4c05-91f7-99b11ab4fe2d)
 ***
 # Step 3
+``` cat vardan.c ``` 
+
+
 ![3](https://github.com/user-attachments/assets/fc470500-20f7-420d-ac2b-cf6d2d5af675)
 ***
 # Step 4
