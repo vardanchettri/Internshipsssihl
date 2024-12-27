@@ -20,13 +20,15 @@ Disassembly of section .text:
 ***
 ***this is the snapshot of the code***
 ***
-![task ii1](https://github.com/user-attachments/assets/827c9e0e-89da-454c-83b8-03589c11ea14)
+![task ii1](https://github.com/user-attachments/assets/2896d669-089b-4e4d-9cd3-df33e203daa7)
+
 ***
 **A DEBUGGER WAS RUN** 
 ***
 ``` spike -d pk vardan.c ``` 
 
-![task 2](https://github.com/user-attachments/assets/f45f4eec-ea38-41b0-a278-f657858319f1)
+![task 2](https://github.com/user-attachments/assets/1fedb105-f08b-4a4f-a21b-2257525baf39)
+
 
 **.**
 
@@ -46,7 +48,8 @@ This code helps us to debug the code in assembly for every a and how many times 
 ``` 100b4:       ff010113                addi    sp,sp,-16 ```
 
 
-![task 3](https://github.com/user-attachments/assets/b34c744c-da05-4a57-abcc-7cfe6b43024e)
+![task 3](https://github.com/user-attachments/assets/2649f2a1-f79e-42c7-80f1-4cc563b75515)
+
 ***
 ***
 
