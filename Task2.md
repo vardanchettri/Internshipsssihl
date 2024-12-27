@@ -71,4 +71,27 @@ This code helps us to debug the code in assembly for every a and how many times 
 ![task 3](https://github.com/user-attachments/assets/6faaff4d-da14-4015-9975-76f2447ec01f)
 
 
+----------------------------------------------------------------------------------------------------------------------------
+***
+**CREATING A NEW C CODE AND RUNNING THROUGH RISCV COMPILER**
+***
+**CHECKING CODE FIRST USING ./A.OUT** 
 
+![edit 1](https://github.com/user-attachments/assets/aa56362e-d925-46f4-b9a3-0678b836a882)
+
+***
+
+**COMPILING THROUGH RISCV**
+
+![extra 2](https://github.com/user-attachments/assets/2383ac8a-7ee6-4197-9216-08eb054d65c8)
+
+
+
+``` spike pk v2.o ``` **was the code used**
+
+![extra 3](https://github.com/user-attachments/assets/749bbba7-28b2-4787-a8ab-c5c412c2c2da)
+***
+
+**DOING DEBUG**
+
+![extra 3](https://github.com/user-attachments/assets/0bb1ef8e-a44f-4070-a207-8ea2c5cdf3fb)
