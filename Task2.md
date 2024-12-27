@@ -47,3 +47,9 @@ This code helps us to debug the code in assembly for every a and how many times 
 
 
 ![task 3](https://github.com/user-attachments/assets/b34c744c-da05-4a57-abcc-7cfe6b43024e)
+***
+***
+
+***calculation for sp***
+
+
