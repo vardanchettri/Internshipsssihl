@@ -51,5 +51,21 @@ This code helps us to debug the code in assembly for every a and how many times 
 ***
 
 ***calculation for sp***
+* 1
+
+
+![taskkkkkkkkkk](https://github.com/user-attachments/assets/fbe3ff99-192a-402a-8743-5ca0c45e10ff)
+***
+* 2
+
+
+![task 2](https://github.com/user-attachments/assets/06f2b8c1-caea-4d58-a601-54eae658cb34)
+***
+* 3
+
+
+
+![task 3](https://github.com/user-attachments/assets/6faaff4d-da14-4015-9975-76f2447ec01f)
+
 
 
