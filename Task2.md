@@ -89,7 +89,7 @@ This code helps us to debug the code in assembly for every a and how many times 
 
 ``` spike pk v2.o ``` **was the code used**
 
-![extra 3](https://github.com/user-attachments/assets/749bbba7-28b2-4787-a8ab-c5c412c2c2da)
+
 ***
 
 **DOING DEBUG**
