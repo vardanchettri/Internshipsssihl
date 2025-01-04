@@ -124,6 +124,29 @@ The B-Type instruction format in RISC-V is used for branch operations that deter
 * imm[12] (31:31), imm[10:5] (30:25), imm[4:1] (11:8), and imm[11] (7:7): The immediate value is used to calculate the offset for the branch. The instruction uses these fields to construct the target address for the branch.
 
 
+  ***The B-Type format is used for conditional branching, where the program’s control flow depends on a condition involving two registers, and the target address is calculated using an immediate offset.***
+
+***
+**(vi) J-TYPE**
+
+The J-Type instruction format in RISC-V is used for unconditional jump operations. The structure is as follows:
+
+* opcode (6-0): Specifies the jump operation, such as Jump and Link (JAL).
+
+* rd (11-7): The destination register, where the return address (the address of the next instruction) is stored.
+
+* imm[20] (31:31), imm[10:1] (30:21), imm[11] (20:20), and imm[19:12] (19:12): The immediate value used to calculate the target address for the jump. The instruction fields are combined to form the full 20-bit immediate value, which is then used to determine the jump target relative to the current instruction.
+
+
+  ***The J-Type format is primarily used for unconditional jumps, such as the JAL instruction, which allows for long-range jumps by using a large immediate value to calculate the jump address.***
+***
+***
+
+
+
+
+
+
 
 
 
