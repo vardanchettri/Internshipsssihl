@@ -141,10 +141,91 @@ The J-Type instruction format in RISC-V is used for unconditional jump operation
   ***The J-Type format is primarily used for unconditional jumps, such as the JAL instruction, which allows for long-range jumps by using a large immediate value to calculate the jump address.***
 ***
 ***
+# INDENTIFYING INSTRUCTIONS
+
+  **IDENTIFYING ABOVE INSTRUCTIONS FROM THE OBJECT DUMP RESULTS FROM PREVIOUS TASK GIVEN BELOW**
+  
+  ```
+Disassembly of section .text:
+
+00000000000100b0 <main>:
+   100b0:       00021537                lui     a0,0x21
+   100b4:       ff010113                addi    sp,sp,-16
+   100b8:       00f00613                li      a2,15
+   100bc:       00500593                li      a1,5
+   100c0:       18050513                addi    a0,a0,384 # 21180 <__clzdi2+0x48>
+   100c4:       00113423                sd      ra,8(sp)
+   100c8:       340000ef                jal     ra,10408 <printf>
+   100cc:       00813083                ld      ra,8(sp)
+   100d0:       00000513                li      a0,0
+   100d4:       01010113                addi    sp,sp,16
+   100d8:       00008067                ret
+```
+
+***
+***
+
+**1. ``` lui a0, 0x21``` (Address: 100b0)**
+Instruction Type: U-Type
+Explanation: Loads the immediate value 0x21 into the upper 20 bits of the register a0.
+  
+**2. ```addi sp, sp, -16 ``` (Address: 100b4)**
+Instruction Type: I-Type
+Explanation: Adds an immediate value -16 to the sp register, effectively reserving 16 bytes of space on the stack.
+  
+**3.``` li a2, 15 ``` (Address: 100b8)**
+Instruction Type: I-Type
+Explanation: Loads the immediate value 15 into register a2. Internally, it is equivalent to addi a2, x0, 15.
+  
+**4.``` li a1, 5 ```(Address: 100bc)**
+Instruction Type: I-Type
+Explanation: Loads the immediate value 5 into register a1. Internally, it is equivalent to addi a1, x0, 5.
+  
+**5.``` addi a0, a0, 384 ```(Address: 100c0)**
+Instruction Type: I-Type
+Explanation: Adds the immediate value 384 to the value in register a0.
+**6.``` sd ra, 8(sp) ```(Address: 100c4)**
+Instruction Type: S-Type
+Explanation: Stores the value in register ra at the memory address sp + 8. This is used for storing data to memory.
+  
+**7.``` jal ra, 10408 ```(Address: 100c8)**
+Instruction Type: J-Type
+Explanation: The jal instruction jumps to the target address 10408 and stores the return address in register ra.
+  
+**8.``` ld ra, 8(sp) ```(Address: 100cc)**
+Instruction Type: I-Type
+Explanation: Loads data from the memory address sp + 8 into the register ra.
+  
+**9.``` li a0, 0 ```(Address: 100d0)**
+Instruction Type: I-Type
+Explanation: Loads the immediate value 0 into register a0. It is equivalent to addi a0, x0, 0.
+  
+**10.``` addi sp, sp, 16 ```(Address: 100d4)**
+Instruction Type: I-Type
+Explanation: Adds the immediate value 16 to the sp register, effectively restoring the stack pointer after reserving space.
+  
+**11.``` ret ```(Address: 100d8)**
+Instruction Type: I-Type (mapped to jalr)
+Explanation: Returns from the function by jumping to the address stored in ra, equivalent to jalr x0, ra, 0.
+  
+**12.``` beq a0, a1, target ```(Example Branch Instruction)**
+Instruction Type: B-Type
+Explanation: If the values in a0 and a1 are equal, this performs a branch to the target address.
+  
+**13.``` bne a0, a1, target ```(Example Branch Instruction)**
+Instruction Type: B-Type
+Explanation: If the values in a0 and a1 are not equal, this performs a branch to the target address.
+  
+**14.``` jal x1, target ```(Example Jump Instruction)**
+Instruction Type: J-Type
+Explanation: This performs an unconditional jump to the target address and stores the return address in register x1.
+  
+**15.``` slli a0, a0, 1 ```(Example Shift Instruction)**
+Instruction Type: R-Type
+Explanation: Shifts the value in register a0 left by 1 bit, storing the result back in a0.
 
 
-
-
+###### [Branch Instructions (e.g., beq and bne) control program flow by checking conditions between two registers. beq branches to a target if the registers are equal, while bne branches if they are not. These allow for loops and conditional jumps in the program. Jump Instruction (jal) performs an unconditional jump to a specified target address and stores the return address in a register (x1), facilitating function calls and returns. Shift Instruction (slli) shifts the bits in register a0 to the left, effectively multiplying the value by 2, commonly used in operations requiring bit manipulation or efficient scaling.]
 
 
 
