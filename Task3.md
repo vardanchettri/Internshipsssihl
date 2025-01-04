@@ -59,6 +59,12 @@ The R-Type is an instruction format in the RISC-V architecture used for performi
 
 * funct7 (31-25): This 7-bit field provides additional operation details, allowing for variations of instructions that share the same opcode and funct3 values.
 
+
+![r](https://github.com/user-attachments/assets/01175c2f-96ad-4fb0-b294-f78f0cce23b6)
+
+
+
+
 ***This format allows RISC-V to execute a wide range of arithmetic and logical operations efficiently, using different combinations of the fields to define the exact operation.***
 ***
 **(ii) I-TYPE**
@@ -74,6 +80,9 @@ The I-Type instruction format in RISC-V is used for operations that involve a co
 * rs1 (19-15): The first source register that holds one of the operands used in the operation.
 
 * imm[11:0] (31:20): A 12-bit immediate value, which is a constant directly embedded within the instruction. This constant serves as one of the operands in the instruction.
+
+  ![i](https://github.com/user-attachments/assets/8e67643e-1e77-4e32-9075-0104c3ce2151)
+
 
   ***This instruction format enables RISC-V to execute
   operations that involve immediate values, such as adding
@@ -94,6 +103,8 @@ The I-Type instruction format in RISC-V is used for operations that involve a co
 
 * imm[11:5] (31:25) and imm[4:0] (11:7): The immediate value is split into two parts. The immediate represents the offset to the memory address and is used in combination with the base address from rs1.
 
+   ![ss](https://github.com/user-attachments/assets/d89c614d-ee6e-40c4-8969-26512364e815)
+
 
   ***The S-Type format is specifically designed for memory store operations, where an immediate offset is added to the address in rs1, and the data in rs2 is written to the resulting address in memory.***
 ***
@@ -106,6 +117,8 @@ The U-Type instruction format in RISC-V is used for operations that involve larg
 * rd (11-7): The destination register where the result of the operation will be stored.
 
 * imm[31:12] (31:12): A 20-bit immediate value used for loading large constants. This value is shifted left by 12 bits and placed in the upper portion of the register.
+
+  ![uu](https://github.com/user-attachments/assets/da3322b7-b0fd-4d38-a924-d7e9b51edd0a)
 
 
   ***The U-Type format is primarily used for operations that require large constant values, allowing the instruction to load a large immediate value into the upper 20 bits of a register (e.g., LUI).***
@@ -123,6 +136,7 @@ The B-Type instruction format in RISC-V is used for branch operations that deter
 
 * imm[12] (31:31), imm[10:5] (30:25), imm[4:1] (11:8), and imm[11] (7:7): The immediate value is used to calculate the offset for the branch. The instruction uses these fields to construct the target address for the branch.
 
+   ![uu](https://github.com/user-attachments/assets/27712275-0bef-41e6-9482-b8a26928d50a)
 
   ***The B-Type format is used for conditional branching, where the program’s control flow depends on a condition involving two registers, and the target address is calculated using an immediate offset.***
 
@@ -137,6 +151,7 @@ The J-Type instruction format in RISC-V is used for unconditional jump operation
 
 * imm[20] (31:31), imm[10:1] (30:21), imm[11] (20:20), and imm[19:12] (19:12): The immediate value used to calculate the target address for the jump. The instruction fields are combined to form the full 20-bit immediate value, which is then used to determine the jump target relative to the current instruction.
 
+  ![j](https://github.com/user-attachments/assets/b9b44e0e-e5b5-4623-9169-d40e1dc817e6)
 
   ***The J-Type format is primarily used for unconditional jumps, such as the JAL instruction, which allows for long-range jumps by using a large immediate value to calculate the jump address.***
 ***
@@ -226,6 +241,10 @@ Explanation: Shifts the value in register a0 left by 1 bit, storing the result b
 
 
 ###### [Branch Instructions (e.g., beq and bne) control program flow by checking conditions between two registers. beq branches to a target if the registers are equal, while bne branches if they are not. These allow for loops and conditional jumps in the program. Jump Instruction (jal) performs an unconditional jump to a specified target address and stores the return address in a register (x1), facilitating function calls and returns. Shift Instruction (slli) shifts the bits in register a0 to the left, effectively multiplying the value by 2, commonly used in operations requiring bit manipulation or efficient scaling.]
+
+***
+/* End__Task_3 */
+***
 
 
 
