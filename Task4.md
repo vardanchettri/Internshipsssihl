@@ -1,6 +1,6 @@
 # FUNCTIONAL SIMULATION 
 ***
-#### ABOUT IVERILOG AND GTKWAWE
+#### ABOUT IVERILOG AND GTKWAWE 
 
 ###### ***Icarus Verilog*** (Iverilog) and ***GTKWave*** are powerful, open-source tools commonly used for Verilog-based digital design and simulation. Iverilog serves as a Verilog simulator, allowing users to compile and run simulations of their Verilog code, including modules and testbenches. It generates simulation output in formats like VCD (Value Change Dump), which can then be visualized using GTKWave. GTKWave is a waveform viewer that displays the simulation results in an intuitive graphical format, helping users analyze signal changes over time, zoom in on specific events, and debug their designs. Together, these tools provide a complete simulation and verification environment, with Iverilog handling the simulation and GTKWave making it easier to interpret the results. 
 ***
@@ -379,7 +379,9 @@ sudo apt-get install iverilog gtkwave
 ```
 ###### (2) Generating files:
 ```
-MAKE TWO FILES IN .v FORMAT AS SAID EARLIER FOR VERILOG NETLIST AND FOR THE TESTBENCH  (my files were sv.v and stb.v)
+MAKE TWO FILES IN .v FORMAT AS SAID EARLIER FOR VERILOG NETLIST AND FOR THE TESTBENCH
+
+(my files were sv.v and stb.v)
 
 ```
 
@@ -397,7 +399,50 @@ vvp my_simulation.vvp
 ```
 gtkwave iiitb_rv32i.vcd
 ```
+
+##### [it will give the simulation] 
 ###### [ if the vcd file is not found to be in directory then give commant : "ls -1" and see the .vcd file in the directory and run the command for GTKwave]
 ***
+***
+### SNAPSHOTS 
+
+#### (1)
+![1111111](https://github.com/user-attachments/assets/e7fc2e25-0fb3-44a9-82e7-231fd008cfdb)
+
+#### (2)
+![1112](https://github.com/user-attachments/assets/80962eaa-51ef-4f3e-826a-f6ab720c08e0)
+
+#### (3)
+![1113](https://github.com/user-attachments/assets/1e411742-f732-4575-9561-22b278891707)
+
+***
+
+# THE SIMULATION (PIPELINES)
 
 
+
+![task 4 2](https://github.com/user-attachments/assets/dfd2229e-15c8-4d6c-8e5b-d8b2caff87b9)
+
+***
+***
+#### ABOUT PIPELINE
+###### This is typical 5-stage RISC pipeline, which consists of the following stages:
+
+###### Instruction Fetch (IF): Signals: IF_ID_IR, IF_ID_NPC Instruction is fetched from memory and the next program counter (NPC) is calculated.
+  
+###### Instruction Decode (ID): Signals: ID_EX_A, ID_EX_B, ID_EX_IMMEDIATE, ID_EX_IR  .The fetched instruction is decoded, and the register values are read.
+
+###### Execute (EX): Signals: EX_MEM_ALUOUT, EX_MEM_IR .The instruction is processed, and ALU operations are performed.
+###### Memory Access (MEM): Signals: MEM_WB_ALUOUT, MEM_WB_LDM .Memory operations like loads and stores are performed.
+###### Write Back (WB): Signals: WB_OUT .Results from the ALU or memory are written back to the register file.
+
+###### These represent the five stages of the pipeline:
+
+#### Instruction Fetch (IF)
+#### Instruction Decode (ID)
+#### Execute (EX)
+#### Memory Access (MEM)
+#### Write Back (WB)
+***
+##### [END_TASK_4]
+***
