@@ -1,5 +1,5 @@
 <details>
-<summary><b>Task 1:</b> </summary>   
+<summary><b>Task 1:RISC-V-objdmp of compiled C code </b> </summary>   
 <br>
 
 # Internshipsssihl
@@ -63,7 +63,7 @@
 
 ----------------------------------------------------------------------------------------------------------------------
 <details>
-<summary><b>Task 2:</b> </summary>   
+<summary><b>Task 2:  Debugging using SPIKE </b> </summary>   
 <br>
 
   # Internship_Task_2
@@ -168,7 +168,7 @@ This code helps us to debug the code in assembly for every a and how many times 
 ----------------------------------------------------------------------------------------------------------------------
 
 <details>
-<summary><b>Task 3:</b> </summary>   
+<summary><b>Task 3:  RISC-V INSTRUCTION TYPES</b> </summary>   
 <br>
 
 
@@ -426,7 +426,7 @@ Explanation: Shifts the value in register a0 left by 1 bit, storing the result b
 
 ----------------------------------------------------------------------------------------------------------------------
 <details>
-<summary><b>Task 4 :</b> </summary>   
+<summary><b>Task 4 : FUNCTIONAL SIMULATION uisng GTKWave </b> </summary>   
 <br>
 
   # FUNCTIONAL SIMULATION 
